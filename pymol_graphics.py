@@ -12,3 +12,8 @@ png filename.png # to save
 #  sometimes the waters mess up the surface rendering, so you need to remove waters before trying to render the protein
 show surface, polymer # to show surface for the protein
 set transparency, 0.7 # 0 is opaque, 1 is fully transparent
+# for coloring custom carbons within a selection:
+util.cnc("within_5")
+color grey50, within_5 and elem c
+# for selecting residues within cutoff distance of a selection:
+select within_5, byres all within 5 of /cpc_a84_WT_qm/CYC/C/CYC`300
