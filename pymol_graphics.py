@@ -2,6 +2,7 @@
 bg_color white # so you can get ray tracing in black outline
 set ambient, 0.5 # better PyMol lighting
 set cartoon_color, hydrogen # I like this color for cartoons
+set cartoon_color, white, trimer1 # set cartoon color for only a subset of the cartoons (add selection to end)
 set cartoon_transparency, 0.7
 set ray_trace_disco_factor, 0.3 # can play around with this, 0 = strong, 1 = off
 # disco only has an effect with ray trace values of 1 - 3
